@@ -45,6 +45,94 @@
 
       <section class="tender">
         <h2 class="tender__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        <p class="tender__text">Поделитесь своей историей и получите
+          шанс выиграть ценный приз — 1000
+          миль на вашу бонусную карту!</p>
+
+        <form class="tender__form" action="https://echo.htmlacademy.ru" method="GET">
+
+          <label for="surname">Фамилия:</label>
+          <input type="text" placeholder="Укажите фамилию *" id="surname">
+
+          <label for="name">Имя:</label>
+          <input type="text" placeholder="Введите ваше имя *" id="name">
+
+          <label for="middle-name">Отчество:</label>
+          <input type="text" placeholder="Ну и отчество тоже" id="middle-name">
+
+          <fieldset class="record">
+            <legend>Ваши безбашенные
+            достижения в путешествии</legend>
+            <ul class="record__list">
+              <li class="record__item">
+                <input type="checkbox" id="checkbox-1" checked>
+                <label class="record__title" for="checkbox-1">Сделал селфи с акулой</label>
+              </li>
+              <li class="record__item">
+                <input type="checkbox" id="checkbox-2" checked>
+                <label class="record__title" for="checkbox-2">Обгорел на пляже</label>
+              </li>
+              <li class="record__item">
+                <input type="checkbox" id="checkbox-3">
+                <label class="record__title" for="checkbox-3">Видел Чака Норриса</label>
+              </li>
+              <li class="record__item">
+                <input type="checkbox" id="checkbox-4">
+                <label class="record__title" for="checkbox-4">Накупил сувениров</label>
+              </li>
+              <li class="record__item">
+                <input type="checkbox" id="checkbox-4" checked>
+                <label class="record__title" id="checkbox-4">Удержал башню</label>
+              </li>
+              <li class="record__item">
+                <input type="checkbox" id="checkbox-5">
+                <label class="record__title" id="checkbox-5">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="contacts-form">
+            <label for="phone">Номер телефона</label>
+            <input type="tel" placeholder="Номер, пожалуйста" id="phone">
+
+            <label for="email">Адрес почты</label>
+            <input type="email" placeholder="Введите почту *" id="email">
+          </fieldset>
+
+          <fieldset class="application">
+            <legend class="application__text">С каким приложением
+              путешествовали?</legend>
+
+            <ul class="application__list">
+              <li class="application__item">
+                <input type="radio" name="application-name" value="iOS" id="iOS" checked>
+                <label for="iOS">Pink для iOS</label>
+              </li>
+              <li class="application__item">
+                <input type="radio" name="application-name" value="Android" id="Android">
+                <label for="Android">Pink на Android</label>
+              </li>
+              <li class="application__item">
+                <input type="radio" name="application-name" value="Windows" id="Windows">
+                <label for="Windows">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="feedback">
+            <legend class="feedback__title">Опишите свои эмоции</legend>
+
+            <textarea class="feedback__form">
+              Можно прям в красках, не
+              стесняясь в выражениях
+            </textarea>
+          </fieldset>
+
+          <button type="submit" class="form__button">Отправить форму</button>
+
+          <p class="form__text"><span>*</span> — обязательные поля</p>
+
+        </form>
       </section>
     </main>
 
