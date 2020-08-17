@@ -134,32 +134,26 @@
 
       <section class="price">
         <div class="price__wrapper slider">
-          <table class="price__table">
-            <tr>
-              <th class="price__title"></th>
-              <th class="price__title">База 1,99 USD</th>
-              <th class="price__title">Стандарт 3,99 USD</th>
-              <th class="price__title">Анлим 1,99 USD</th>
-            </tr>
-            <tr>
-              <td class="price__component">Розовый фильтр</td>
-              <td class="price__сell">Да</td>
-              <td class="price__сell">Да</td>
-              <td class="price__сell">Да</td>
-            </tr>
-            <tr>
-              <th class="price__component">Смайлики</th>
-              <td class="price__сell">Нет</td>
-              <td class="price__сell">Да</td>
-              <td class="price__сell">Да</td>
-            </tr>
-            <tr>
-              <th class="price__component">Комментарии</th>
-              <td class="price__сell">Нет</td>
-              <td class="price__сell">Нет</td>
-              <td class="price__сell">Да</td>
-            </tr>
-          </table>
+          <ul class="price__list">
+            <li class="price__item slider">
+              <header class="price__header">
+                <span class="price__hit-sticker"></span>
+                <h4>Стандарт</h4>
+                <p>3,99 usd</p>
+              </header>
+              <ul class="price__list">
+                <li class="price__item price__item--available">
+                  <p>Розовый фильтр</p>
+                </li>
+                <li class="carousel-rates__item">
+                  <p>Смайлики</p>
+                </li>
+                <li class="carousel-rates__item">
+                  <p>Комментари</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
           <p class="price__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--current" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
