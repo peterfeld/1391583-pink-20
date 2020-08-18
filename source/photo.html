@@ -166,6 +166,31 @@
         </p>
       </section>
 
+      <section class="editor">
+        <form action="https://echo.htmlacademy.ru" method="GET">
+          <img src="https://via.placeholder.com/280x374" width="280" height="374" alt="Ваше Фото">
+
+          <ul class="editor__list">
+            <li class="editor__item">
+              <label for="cut" class="visually-hidden">Обрезать фотографию
+              <input type="range" id="cut">
+            </li>
+            <li class="editor__item">
+              <label for="brightness" class="visually-hidden">Яркость
+              <input type="range" id="brightness">
+            </li>
+            <li class="editor__item">
+              <label for="light" class="visually-hidden">Свет
+              <input type="range" id="light">
+            </li>
+          </ul>
+
+          <button type="submit" class="editor__button">Запостить</button>
+          <button type="button" disabled>Отмена</button>
+
+        </form>
+      </section>
+
     </main>
 
     <footer class="page-footer">
