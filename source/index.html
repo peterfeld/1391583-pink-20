@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo" aria-label="Логотип Пинк">
-        <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Пинк">
+        <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Пинк">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -16,22 +18,22 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>
+              <a class="main-nav__link">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">
+              <a class="main-nav__link" href="photo.html">
                 Фотографии
               </a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">
+              <a class="main-nav__link" href="form.html">
                 Конкурс
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a class="main-nav__link" href="#">
                 HTML academy
               </a>
             </li>
@@ -44,11 +46,11 @@
       <h1 class="visually-hidden">Пинк</h1>
 
       <section class="about">
-        <h2>Взгляните на жизнь иначе!</h2>
+        <h2 class="about__title">Взгляните на жизнь иначе!</h2>
       </section>
 
       <section class="downloads">
-        <a class="downloads__link button">Скачать приложение</a>
+        <a class="downloads__link button" href="#">Скачать приложение</a>
 
         <ul class="downloads__list">
           <li class="downloads__item downloads__item--apple">
@@ -199,20 +201,23 @@
       </section>
 
       <section class="contacts">
-        <p class="contacts__text">Остались вопросы?
+        <p class="contacts__text">
+          Остались вопросы?
           Свяжитесь с нами!</p>
-        <p class="contacts__tel">Звоните:
-          <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+        <p>
+          <span class="contacts__title">Звоните:</span>
+          <a class="contacts__tel" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </p>
-        <p class="contacts__email">
-          Пишите:
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <p>
+          <span class="contacts__title">Пишите:</span>
+          <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
-        <p class="contacts__adress">Приезжайте в гости:
+        <p class="contacts__adress">
+          <span class="contacts__title">Приезжайте в гости:</span>
           ул. Большая Конюшенная, 19/8
         </p>
         <a class="contacts__map">
-          <img src="https://via.placeholder.com/74x23" width="320" height="200" alt="Карта">
+          <img src="img/bg-map-mobile@1x.png" width="320" height="200" alt="Карта">
         </a>
       </section>
     </main>
@@ -221,7 +226,7 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a href="#">
-            <img src="https://via.placeholder.com/74x23" width="145" height="40" alt="Пинк">
+            <img src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Пинк">
           </a>
         </div>
         <div class="page-footer__social social">
