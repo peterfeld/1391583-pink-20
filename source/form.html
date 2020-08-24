@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Пинк">
+        <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Пинк">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -16,22 +18,22 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="index.html">
+              <a class="site-list__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">
+              <a class="site-list__link" href="photo.html">
                 Фотографии
               </a>
             </li>
             <li class="site-list__item">
-              <a>
+              <a class="site-list__link">
                 Конкурс
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 HTML academy
               </a>
             </li>
@@ -51,17 +53,17 @@
 
         <form class="tender__form" action="https://echo.htmlacademy.ru" method="GET">
 
-          <label for="surname">Фамилия:</label>
-          <input type="text" placeholder="Укажите фамилию *" id="surname">
+          <label class="tender__label" for="surname">Фамилия:</label>
+          <input class="tender__input" type="text" placeholder="Укажите фамилию *" id="surname">
 
-          <label for="name">Имя:</label>
-          <input type="text" placeholder="Введите ваше имя *" id="name">
+          <label class="tender__label" for="name">Имя:</label>
+          <input  class="tender__input" type="text" placeholder="Введите ваше имя *" id="name">
 
-          <label for="middle-name">Отчество:</label>
-          <input type="text" placeholder="Ну и отчество тоже" id="middle-name">
+          <label class="tender__label" for="middle-name">Отчество:</label>
+          <input class="tender__input" type="text" placeholder="Ну и отчество тоже" id="middle-name">
 
           <fieldset class="record">
-            <legend>Ваши безбашенные
+            <legend class="record__legend">Ваши безбашенные
             достижения в путешествии</legend>
             <ul class="record__list">
               <li class="record__item">
@@ -92,10 +94,10 @@
           </fieldset>
 
           <fieldset class="contacts-form">
-            <label for="phone">Номер телефона</label>
+            <label class="contacts-form__label" for="phone">Номер телефона</label>
             <input type="tel" placeholder="Номер, пожалуйста" id="phone">
 
-            <label for="email">Адрес почты</label>
+            <label class="contacts-form__label" for="email">Адрес почты</label>
             <input type="email" placeholder="Введите почту *" id="email">
           </fieldset>
 
@@ -128,9 +130,9 @@
             </textarea>
           </fieldset>
 
-          <button type="submit" class="form__button">Отправить форму</button>
+          <button type="submit" class="tender__button">Отправить форму</button>
 
-          <p class="form__text"><span>*</span> — обязательные поля</p>
+          <p class="tender__text"><span class="tender__text--bottom">*</span> — обязательные поля</p>
 
         </form>
       </section>
@@ -140,7 +142,7 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a href="#">
-            <img src="https://via.placeholder.com/74x23" width="145" height="40" alt="Пинк">
+            <img src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Пинк">
           </a>
         </div>
         <div class="page-footer__social social">
