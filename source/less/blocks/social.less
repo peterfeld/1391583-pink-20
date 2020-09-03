@@ -9,7 +9,22 @@
   border: 3px solid @basis-extra-grey;
 }
 
+.social__link:hover,
+.social__link:focus {
+  border: 3px solid @basis-blue;
+}
+
+.social__link:active {
+  border: 3px solid fade(@basis-blue, 10%);
+}
+
 .social__icon {
   fill: @basis-red;
 }
+
+.social__link:active .social__icon {
+  fill: fade(@basis-red, 30%);
+}
+
+
 

@@ -1,16 +1,118 @@
+.gallery {
+  padding-top: 54px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 100px;
+  }
+}
+
+.gallery__img {
+  margin: 0;
+}
+
+.gallery__img img {
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
 .gallery__intro {
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   color: @basis-blue;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: block;
+  margin-bottom: 60px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 314px;
+    padding-left: 314px;
+  }
+}
+
+.gallery__img--day {
+  position: relative;
+}
+
+.gallery__img--day img{
+  width: 100%;
+}
+
+.gallery__list {
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    width: 700px;
+    margin-bottom: 73px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1400px;
+  }
+}
+
+.gallery__wrapper {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 455px 455px;
+    gap: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 555px 555px;
+    gap: 20px;
+  }
+}
+
+.gallery__img--day::after {
+  content: "Панорама дня";
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  width: 140px;
+  height: 36px;
+  background-color: @basis-red;
+  color: @basis-white;
+  position: absolute;
+  top: 0;
+  right: 6.5%;
 }
 
 .gallery__item {
+  margin: 0 auto;
+  width: 270px;
   background-color: @basis-extra-grey;
   font-size: 14px;
   line-height: 24px;
   color: @basis-blue;
+  display: block;
+
 }
 
 .gallery__user {
@@ -23,6 +125,7 @@
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
+  position: relative;
 }
 
 .gallery__counter {
@@ -31,4 +134,21 @@
   text-align: right;
   text-transform: uppercase;
   color: @basis-red;
+}
+
+.gallery__like {
+  background-color: @basis-extra-grey;
+  border: none;
+  position: absolute;
+  width: 13px;
+  height: 12px;
+}
+
+.gallery__like::after {
+  content: "";
+  width: 13px;
+  height: 12px;
+  position: absolute;
+  background-image: url("../img/icon-heart.svg");
+  fill: @basis-red;
 }
