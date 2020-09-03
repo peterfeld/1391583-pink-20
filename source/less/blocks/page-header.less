@@ -1,0 +1,39 @@
+.page-header {
+  background-color: @basis-blue;
+  position: relative;
+  box-sizing: border-box;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    background-color: fade(@basis-black, 30%);
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
+}
+
+.page-header__logo {
+  display: flex;
+  padding: 23px 20px;
+  height: 69px;
+  box-sizing: border-box;
+  border-bottom: 1px solid @basis-black;
+
+  @media (min-width: @tablet-width) {
+    height: 109px;
+    padding-top: 27px;
+    padding-bottom: 42px;
+  }
+
+}
+
+.page-header__logo img{
+  height: 23px;
+  width: 74px;
+
+  @media (min-width: @tablet-width) {
+    height: 40px;
+    width: 145px;
+  }
+}

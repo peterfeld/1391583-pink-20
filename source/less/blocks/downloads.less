@@ -1,0 +1,46 @@
+.downloads {
+  color: @basis-white;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  background-color: @basis-blue;
+  padding: 29px 20px;
+
+}
+
+.downloads__link {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: @basis-white;
+  text-align: center;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  box-sizing: border-box;
+  border: 3px solid @basis-white;
+  border-radius: 29px;
+  margin-bottom: 32px;
+
+  &:hover,
+  &:focus {
+    background-color: @basis-white;
+    color: @basis-red;
+  }
+
+  &:active {
+    color: fade(@basis-red, 30%);
+  }
+}
+
+.downloads__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 205px;
+  margin: 0 auto;
+}
