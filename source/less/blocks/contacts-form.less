@@ -4,9 +4,15 @@
   font-size: 14px;
   line-height: 30px;
   background-color: @basis-white;
+  order: -1;
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
 }
 
 .contacts-form__label {
   text-transform: uppercase;
   color: @basis-red;
+  display: block;
 }

@@ -5,6 +5,14 @@
   font-size: 18px;
   line-height: 30px;
   color: @basis-blue;
+
+  @media (min-width: @tablet-width) {
+    order: -2;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-grow: 1;
+  }
 }
 
 .application__text {

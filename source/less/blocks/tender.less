@@ -7,7 +7,20 @@
   color: @basis-blue;
 }
 
+.tender__form {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .tender__title {
+  margin: 0;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
@@ -17,6 +30,22 @@
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-color: @basis-blue;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 36px 46px 51px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.tender__wrapper {
+  margin: 0 auto;
+  width: 280px;
+  @media (min-width: @tablet-width) {
+    width: 640px;
+  }
 }
 
 .tender__text {
@@ -25,13 +54,6 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-}
-
-.tender__label {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  color: @basis-red;
 }
 
 .tender__button {
