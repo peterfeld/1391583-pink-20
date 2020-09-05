@@ -5,8 +5,22 @@
   line-height: 24px;
   text-align: center;
   background-color: @basis-blue;
-  padding: 29px 20px;
+  padding-top: 29px;
+  padding-bottom: 29px;
 
+  @media (min-width: @tablet-width) {
+    z-index: 100;
+    position: absolute;
+    background-color: transparent;
+    top: 600px;
+    left: 20px;
+    height: 200px;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: 500px;
+    left: 130px;
+  }
 }
 
 .downloads__link {
@@ -34,6 +48,11 @@
   &:active {
     color: fade(@basis-red, 30%);
   }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-bottom: 32px;
+  }
 }
 
 .downloads__list {
@@ -41,6 +60,14 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  width: 205px;
-  margin: 0 auto;
+
+  @media (min-width: @tablet-width){
+    width: 205px;
+  }
+}
+
+.downloads__text {
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
 }

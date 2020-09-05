@@ -46,44 +46,50 @@
       <h1 class="visually-hidden">Пинк</h1>
 
       <section class="about">
-        <h2 class="about__title">Взгляните на жизнь<br>
+        <div class="container">
+          <h2 class="about__title container">Взгляните на жизнь<br>
           иначе!</h2>
+        </div>
       </section>
 
       <section class="downloads">
-        <a class="downloads__link button" href="#">Скачать приложение</a>
+        <div class="container">
+          <a class="downloads__link button" href="#">Скачать приложение</a>
 
-        <ul class="downloads__list reset-list">
-          <li class="downloads__item downloads__item--apple">
-            <a href="#" aria-label="Скачать приложения для Apple"><img src="img/logo-apple.svg"></a>
-          </li>
-          <li class="downloads__item downloads__item--android">
-            <a href="#" aria-label="Скачать приложение для Android"><img src="img/logo-android.svg"></a>
-          </li>
-          <li class="downloads__item downloads__item--windows">
-            <a href="#" aria-label="Скачать приложение для Windows"><img src="img/logo-microsoft.svg"></a>
-          </li>
-        </ul>
+          <ul class="downloads__list reset-list">
+            <li class="downloads__item downloads__item--apple">
+              <a href="#" aria-label="Скачать приложения для Apple"><img src="img/logo-apple.svg"></a>
+            </li>
+            <li class="downloads__item downloads__item--android">
+              <a href="#" aria-label="Скачать приложение для Android"><img src="img/logo-android.svg"></a>
+            </li>
+            <li class="downloads__item downloads__item--windows">
+              <a href="#" aria-label="Скачать приложение для Windows"><img src="img/logo-microsoft.svg"></a>
+            </li>
+          </ul>
 
-        <p class="downloads__text">
-          Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8
-        </p>
+          <p class="downloads__text">
+            Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8
+          </p>
+        </div>
       </section>
 
       <section class="offer">
         <header class="offer__header">
-          <p class="offer__intro">
-            Устали от серости
-            мегаполиса?
-          </p>
+          <div class="container">
+            <p class="offer__intro">
+              Устали от серости
+              мегаполиса?
+            </p>
 
-          <p class="offer__slogan">
-            Нам есть, что вам
-            предложить!
-          </p>
+            <p class="offer__slogan">
+              Нам есть, что вам
+              предложить!
+            </p>
+          </div>
         </header>
 
-        <ul class="offer__list reset-list">
+        <ul class="offer__list container">
           <li class="offer__item">
             <h3 class="offer__title">Поднимает настроение</h3>
             <p class="offer__description">
@@ -123,7 +129,7 @@
 
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
-        <div class="reviews__wrapper slider">
+        <div class="reviews__wrapper slider container">
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
               <div class="reviews__author-info">
@@ -147,7 +153,7 @@
       </section>
 
       <section class="price">
-        <div class="price__wrapper slider">
+        <div class="price__wrapper container slider">
           <ul class="price__list price__list--top reset-list">
             <li class="price__item slider">
               <header class="price__header">
@@ -205,36 +211,38 @@
             </li>
           </ul>
           <p class="price__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle slider__toggle--current" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
           </p>
         </div>
       </section>
 
       <section class="contacts">
-        <p class="contacts__text">
-          Остались вопросы?
-          Свяжитесь с нами!</p>
-        <p class="contacts__wrapper">
-          <span class="contacts__title">Звоните:</span>
-          <a class="contacts__tel" href="tel:+78125556666">+7 (812) 555-66-66</a>
-        </p>
-        <p class="contacts__wrapper">
-          <span class="contacts__title">Пишите:</span>
-          <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
-        <p class="contacts__adress">
-          <span class="contacts__title">Приезжайте в гости:</span>
-          ул. Большая Конюшенная, 19/8
-        </p>
+        <div class="container">
+          <p class="contacts__text">
+            Остались вопросы?
+            Свяжитесь с нами!</p>
+          <p class="contacts__wrapper">
+            <span class="contacts__title">Звоните:</span>
+            <a class="contacts__tel" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </p>
+          <p class="contacts__wrapper">
+            <span class="contacts__title">Пишите:</span>
+            <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="contacts__adress">
+            <span class="contacts__title">Приезжайте в гости:</span>
+            ул. Большая Конюшенная, 19/8
+          </p>
+        </div>
         <a href="#" class="contacts__map">
           <img src="img/bg-map-mobile@1x.png" height="200" alt="Карта">
         </a>
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a href="#">

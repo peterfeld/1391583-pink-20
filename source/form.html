@@ -43,104 +43,116 @@
     </header>
 
     <main class="page-main">
-      <h1 class="visually-hidden">Пинк: Конкурс</h1>
+        <h1 class="visually-hidden">Пинк: Конкурс</h1>
 
-      <section class="tender">
-          <h2 class="tender__title"><div class="tender__wrapper">Конкурс на самое безбашенное путешествие с Пинк</div></h2>
-        <p class="tender__text">Поделитесь своей историей и получите
-          шанс выиграть ценный приз — 1000
-          миль на вашу бонусную карту!</p>
+        <section class="tender">
+            <h2 class="tender__title">
+              <div class="container">Конкурс на самое безбашенное путешествие с Пинк</div>
+            </h2>
+            <div class="container">
+              <p class="tender__text">Поделитесь своей историей и получите
+                шанс выиграть ценный приз — 1000
+                миль на вашу бонусную карту!</p>
+            </div>
 
-        <form class="tender__form" action="https://echo.htmlacademy.ru" method="GET">
+          <form class="tender__form container" action="https://echo.htmlacademy.ru" method="GET">
 
-          <div class="user-data">
-            <label class="user-data__label" for="surname">Фамилия:</label>
-            <input class="user-data__input" type="text" placeholder="Укажите фамилию *" id="surname">
+            <div class="user-data">
+              <div class="container">
+                <label class="user-data__label" for="surname">Фамилия:</label>
+                <input class="user-data__input" type="text" placeholder="Укажите фамилию *" id="surname">
 
-            <label class="user-data__label" for="name">Имя:</label>
-            <input  class="user-data__input" type="text" placeholder="Введите ваше имя *" id="name">
+                <label class="user-data__label" for="name">Имя:</label>
+                <input  class="user-data__input" type="text" placeholder="Введите ваше имя *" id="name">
 
-            <label class="user-data__label" for="middle-name">Отчество:</label>
-            <input class="user-data__input" type="text" placeholder="Ну и отчество тоже" id="middle-name">
-          </div>
-          <fieldset class="record">
-            <legend class="record__legend">Ваши безбашенные
-            достижения в путешествии</legend>
-            <ul class="record__list reset-list">
-              <li class="record__item">
-                <input type="checkbox" id="checkbox-1" checked>
-                <label class="record__title" for="checkbox-1">Сделал селфи с акулой</label>
-              </li>
-              <li class="record__item">
-                <input type="checkbox" id="checkbox-2" checked>
-                <label class="record__title" for="checkbox-2">Обгорел на пляже</label>
-              </li>
-              <li class="record__item">
-                <input type="checkbox" id="checkbox-3">
-                <label class="record__title" for="checkbox-3">Видел Чака Норриса</label>
-              </li>
-              <li class="record__item">
-                <input type="checkbox" id="checkbox-4">
-                <label class="record__title" for="checkbox-4">Накупил сувениров</label>
-              </li>
-              <li class="record__item">
-                <input type="checkbox" id="checkbox-4" checked>
-                <label class="record__title" id="checkbox-4">Удержал башню</label>
-              </li>
-              <li class="record__item">
-                <input type="checkbox" id="checkbox-5">
-                <label class="record__title" id="checkbox-5">Разгромил отель</label>
-              </li>
-            </ul>
-          </fieldset>
+                <label class="user-data__label" for="middle-name">Отчество:</label>
+                <input class="user-data__input" type="text" placeholder="Ну и отчество тоже" id="middle-name">
+              </div>
+            </div>
+            <fieldset class="record">
+                <legend class="record__legend">Ваши безбашенные
+                достижения в путешествии</legend>
+                <div class="container">
+                  <ul class="record__list reset-list">
+                    <li class="record__item">
+                      <input type="checkbox" id="checkbox-1" checked>
+                      <label class="record__title" for="checkbox-1">Сделал селфи с акулой</label>
+                    </li>
+                    <li class="record__item">
+                      <input type="checkbox" id="checkbox-2" checked>
+                      <label class="record__title" for="checkbox-2">Обгорел на пляже</label>
+                    </li>
+                    <li class="record__item">
+                      <input type="checkbox" id="checkbox-3">
+                      <label class="record__title" for="checkbox-3">Видел Чака Норриса</label>
+                    </li>
+                    <li class="record__item">
+                      <input type="checkbox" id="checkbox-4">
+                      <label class="record__title" for="checkbox-4">Накупил сувениров</label>
+                    </li>
+                    <li class="record__item">
+                      <input type="checkbox" id="checkbox-4" checked>
+                      <label class="record__title" id="checkbox-4">Удержал башню</label>
+                    </li>
+                    <li class="record__item">
+                      <input type="checkbox" id="checkbox-5">
+                      <label class="record__title" id="checkbox-5">Разгромил отель</label>
+                    </li>
+                  </ul>
+                </div>
+            </fieldset>
 
-          <fieldset class="contacts-form">
-            <label class="contacts-form__label" for="phone">Номер телефона</label>
-            <input type="tel" placeholder="Номер, пожалуйста" id="phone">
+            <fieldset class="contacts-form">
+              <div class="container">
+                <label class="contacts-form__label" for="phone">Номер телефона</label>
+                <input type="tel" placeholder="Номер, пожалуйста" id="phone">
 
-            <label class="contacts-form__label" for="email">Адрес почты</label>
-            <input type="email" placeholder="Введите почту *" id="email">
-          </fieldset>
+                <label class="contacts-form__label" for="email">Адрес почты</label>
+                <input type="email" placeholder="Введите почту *" id="email">
+              </div>
+            </fieldset>
 
-          <fieldset class="application">
-            <legend class="application__text">С каким приложением
-              путешествовали?</legend>
+            <fieldset class="application">
+              <legend class="application__text">С каким приложением
+                путешествовали?</legend>
+              <div class="container">
+                <ul class="application__list reset-list">
+                  <li class="application__item">
+                    <input type="radio" name="application-name" value="iOS" id="iOS" checked>
+                    <label for="iOS">Pink для iOS</label>
+                  </li>
+                  <li class="application__item">
+                    <input type="radio" name="application-name" value="Android" id="Android">
+                    <label for="Android">Pink на Android</label>
+                  </li>
+                  <li class="application__item">
+                    <input type="radio" name="application-name" value="Windows" id="Windows">
+                    <label for="Windows">Windows Phone</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
 
-            <ul class="application__list reset-list">
-              <li class="application__item">
-                <input type="radio" name="application-name" value="iOS" id="iOS" checked>
-                <label for="iOS">Pink для iOS</label>
-              </li>
-              <li class="application__item">
-                <input type="radio" name="application-name" value="Android" id="Android">
-                <label for="Android">Pink на Android</label>
-              </li>
-              <li class="application__item">
-                <input type="radio" name="application-name" value="Windows" id="Windows">
-                <label for="Windows">Windows Phone</label>
-              </li>
-            </ul>
-          </fieldset>
+            <fieldset class="feedback">
+              <legend class="feedback__title">Опишите свои эмоции</legend>
+              <div class="container">
+                <textarea class="feedback__form">
+                  Можно прям в красках, не
+                  стесняясь в выражениях
+                </textarea>
+              </div>
+            </fieldset>
+            <div class="container">
+              <button type="submit" class="tender__button">Отправить форму</button>
 
-          <fieldset class="feedback">
-            <legend class="feedback__title">Опишите свои эмоции</legend>
-
-            <textarea class="feedback__form">
-              Можно прям в красках, не
-              стесняясь в выражениях
-            </textarea>
-          </fieldset>
-
-          <button type="submit" class="tender__button">Отправить форму</button>
-
-          <p class="tender__text"><span class="tender__text--bottom">*</span> — обязательные поля</p>
-
-        </form>
-      </section>
+              <p class="tender__text"><span class="tender__text--bottom">*</span> — обязательные поля</p>
+            </div>
+          </form>
+        </section>
     </main>
 
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a href="#">

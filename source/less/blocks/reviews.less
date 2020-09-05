@@ -8,6 +8,10 @@
   text-align: center;
 }
 
+.reviews__item {
+  margin: 0;
+}
+
 .reviews__author-name {
   font-weight: bold;
   font-size: 18px;
@@ -38,7 +42,14 @@
 }
 
 .reviews__text {
+  display: block;
+
   @media (min-width: @tablet-width) {
+    max-width: 620px;
     order: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
   }
 }
